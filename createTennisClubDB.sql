@@ -5,7 +5,7 @@ drop database if exists tennisclub;
      id integer auto_increment,
      firstname varchar(30),
      surname varchar(30),
-     membertype varchar(6),
+     membertype varchar(15),
      dateofbirth date,
      created_at datetime,
      updated_at datetime,

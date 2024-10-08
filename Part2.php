@@ -21,10 +21,12 @@ if (!$conn) {
 
 $X = $_GET['firstName'];
 $Y = $_GET['lastName'];
+$C = $_GET['memberType'];
+$D = $_GET['dateOfBirth'];
 
 
 
-$sql = "INSERT INTO member (firstname, surname) VALUES ('$X', '$Y')";
+$sql = "INSERT INTO member (firstname, surname, membertype, dateofbirth) VALUES ('$X', '$Y', '$C', '$D')";
 
 mysqli_query($conn, $sql);
 
